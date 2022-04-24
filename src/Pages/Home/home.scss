@@ -1,0 +1,68 @@
+.home {
+  position: absolute;
+  width: 93%;
+  right: 0;
+  bottom: 0;
+  height: 90vh;
+  background-color: var(--qora);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__left {
+    background-color: var(--qora);
+    padding: 2.2rem;
+  }
+  &__right {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.755),
+        rgba(0, 0, 0, 0.637)
+      ),
+      url("../Portfolio/images/hakker.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.title {
+  padding-top: 10rem;
+  font-size: 2.6rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3 0.2rem;
+  &--2 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    margin: 1.6rem 0;
+  }
+}
+.description {
+  margin-top: 3rem;
+  width: 90%;
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+}
+.buttons {
+  display: flex;
+  margin-top: 12rem;
+}
+.btn {
+  margin-right: 2.2rem;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid var(--oq);
+  &--left {
+    background-color: var(--oq);
+    color: var(--qora);
+    &:hover {
+      background-color: var(--qora);
+      color: var(--oq);
+    }
+  }
+  &--right {
+    background-color: var(--qora);
+    color: var(--oq);
+    &:hover {
+      background-color: var(--oq);
+      color: var(--qora);
+    }
+  }
+}

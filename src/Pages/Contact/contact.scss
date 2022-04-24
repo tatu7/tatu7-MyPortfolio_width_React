@@ -1,0 +1,86 @@
+:root {
+  --qora: black;
+  --oq: white;
+}
+.contact {
+  position: absolute;
+  width: 93%;
+  right: 0;
+  bottom: 0;
+  height: 90vh;
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3.4rem 0;
+    &--left {
+      padding: 2.2rem;
+      &--heading {
+        padding-top: 4rem;
+        font-weight: 700;
+        font-size: 2.7rem;
+      }
+      &--email,
+      &--phone {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 2rem 0;
+        span {
+          font-size: 1.5rem;
+        }
+      }
+      &--paragraf {
+        line-height: 2;
+        letter-spacing: 0.1rem;
+      }
+    }
+    &--right {
+      padding: 1.2rem 0;
+      &--inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        margin: 2.2rem;
+      }
+      &--input {
+        input {
+          background-color: var(--qora);
+          color: var(--oq);
+          border: 1px solid var(--oq);
+          padding: 1.2rem 0.8rem;
+          width: 100%;
+          border-radius: 0.4rem;
+        }
+      }
+      &--text {
+        padding: 1.2rem;
+        margin-left: 1.2rem;
+        textarea {
+          background-color: var(--qora);
+          color: var(--oq);
+          border: 1px solid var(--oq);
+          padding: 1.2rem 0.8rem;
+          width: 98%;
+          border-radius: 0.4rem;
+          resize: none;
+        }
+      }
+      &--btn {
+        padding: 1.2rem;
+        margin-left: 1.2rem;
+        button {
+          background-color: var(--qora);
+          color: var(--oq);
+          border: 1px solid var(--oq);
+          padding: 1.2rem 0.8rem;
+          width: 20%;
+          border-radius: 0.4rem;
+          text-align: center;
+          &:hover {
+            box-shadow: var(--oq) 1.95px 1.95px 2.6px;
+          }
+        }
+      }
+    }
+  }
+}

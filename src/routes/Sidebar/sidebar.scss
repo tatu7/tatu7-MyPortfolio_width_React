@@ -1,0 +1,33 @@
+.sidebar {
+  position: fixed;
+  background-color: var(--qora);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.follow {
+  writing-mode: vertical-lr;
+}
+.way {
+  margin-right: 3rem;
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+  list-style: none;
+  border-radius: 50%;
+  a {
+    border-radius: 50%;
+    color: var(--oq);
+    &:hover {
+      box-shadow: var(--oq) 0px 2px 29px 0px;
+    }
+  }
+}
+.draw {
+  background-color: var(--oq);
+  width: 3px;
+  height: 8rem;
+  margin-bottom: 3.4rem;
+}

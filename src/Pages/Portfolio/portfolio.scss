@@ -1,0 +1,69 @@
+.portfolio {
+  position: absolute;
+  width: 93%;
+  right: 0;
+  bottom: 0;
+  height: 90vh;
+  &__title {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin: 2.4rem 0;
+  }
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.img {
+  overflow: hidden;
+  margin: 1.2rem 2em;
+  height: 20rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  img {
+    height: 100%;
+    border: 8px solid var(--oq);
+    width: 100%;
+  }
+  &:hover {
+    .img__modal {
+      display: block;
+    }
+  }
+}
+.horizantal {
+  background-color: var(--oq);
+  width: 50%;
+  height: 2px;
+  margin: 2.4rem 0;
+}
+.img__modal {
+  display: none;
+  position: absolute;
+  background-color: #5555;
+  width: 90%;
+  height: 85%;
+  text-align: center;
+  top: 1.3rem;
+  left: 1.8rem;
+  padding-top: 1.2rem;
+  opacity: 0.1;
+  &--description {
+    padding-top: 2rem;
+  }
+  &--btn {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.2rem;
+    margin-top: 4rem;
+    transition: all ease-in-out 0.6s;
+    &:hover {
+      background-color: #fff;
+      color: black;
+      border: 1px solid black;
+    }
+  }
+}

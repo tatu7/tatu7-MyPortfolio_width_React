@@ -1,0 +1,38 @@
+.about {
+  position: absolute;
+  width: 93%;
+  right: 0;
+  bottom: 0;
+  height: 90vh;
+  &__abote {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3.4rem 0;
+    &--left {
+      padding: 0 1.4rem;
+      align-items: center;
+      font-size: 2.4rem;
+      margin-top: 2.2rem;
+    }
+    &--right {
+      padding: 1.4rem;
+      &--description {
+        line-height: 2;
+      }
+    }
+  }
+}
+.horizantal-1 {
+  width: 80%;
+  height: 1px;
+  margin-bottom: 2rem;
+  background-color: var(--oq);
+}
+.works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.work {
+  list-style: none;
+}
