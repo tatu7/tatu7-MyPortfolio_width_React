@@ -6,7 +6,7 @@ function MainNav(props) {
   return (
     <Fade bottom>
       <div className="nav--main--logo"> JO`RAQO`ZI</div>
-      <div className="nav--main--btn">
+      <div className="nav--mayin--btn">
         <div className="nav--theme">
           {color ? (
             <i onClick={() => setColor(!color)} class="circle icon"></i>
